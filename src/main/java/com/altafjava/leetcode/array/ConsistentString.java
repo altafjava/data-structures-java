@@ -35,8 +35,8 @@ public class ConsistentString {
 //		String allowed = "ab", words[] = { "ad", "bd", "aaab", "baa", "badab" };
 //		String allowed = "abc", words[] = { "a", "b", "c", "ab", "ac", "bc", "abc" };
 		String allowed = "cad", words[] = { "cc", "acd", "b", "ba", "bac", "bad", "ac", "d" };
-//		int countConsistentStrings = consistentString.countConsistentStrings(allowed, words);
-		int countConsistentStrings = consistentString.countConsistentStrings2(allowed, words);
+		int countConsistentStrings = consistentString.countConsistentStrings(allowed, words);
+//		int countConsistentStrings = consistentString.countConsistentStrings2(allowed, words);
 		System.out.println(countConsistentStrings);
 	}
 

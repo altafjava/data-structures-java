@@ -32,7 +32,8 @@ public class SpiralMatrix {
 	}
 
 	public List<Integer> spiralOrder(int[][] matrix) {
-//		We use directions to right->down->left->up and then repeat. Repeat will be counted using `repeat` variable. When we bump into an edge, we change the direction.
+//		We use directions to right->down->left->up and then repeat. Repeat will be counted using `repeat` variable.
+//		When we bump into an edge, we change the direction.
 		List<Integer> list = new ArrayList<>();
 		int i = 0, j = 0, currentDir = 0, directions[] = { 0, 1, 0, -1, 0 }, repeat = 0;
 		int x = matrix.length;

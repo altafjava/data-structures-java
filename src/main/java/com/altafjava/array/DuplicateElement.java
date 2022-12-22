@@ -2,7 +2,7 @@ package com.altafjava.array;
 
 public class DuplicateElement {
 	public static void main(String[] args) {
-		int[] sortedArray = { 3, 6, 8, 8, 10, 10, 12, 15, 15, 15, 20 };
+		int[] sortedArray = { 3, 6, 8, 8, 8, 10, 12, 12, 15 };
 		DuplicateElement duplicateElement = new DuplicateElement();
 		duplicateElement.findDuplicatesInSortedArray(sortedArray);
 		duplicateElement.findDuplicatesWithCountInSortedArray(sortedArray);

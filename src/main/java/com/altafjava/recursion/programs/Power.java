@@ -9,6 +9,7 @@ public class Power {
 
 	public static void main(String[] args) {
 		int result = powerOptimized(2, 5);
+//		int result = power(2, 5);
 		System.out.println(result);
 	}
 
@@ -25,9 +26,9 @@ public class Power {
 			return base;
 		}
 		if (pow % 2 == 0) {
-			return power(base * base, pow / 2);
+			return powerOptimized(base * base, pow / 2);
 		} else {
-			return power(base * base, (pow - 1) / 2) * base;
+			return powerOptimized(base * base, (pow - 1) / 2) * base;
 		}
 	}
 }

@@ -28,10 +28,11 @@ Constraints:
 */
 public class SmallerNumber {
 	public static void main(String[] args) {
+		int[] nums = { 0, 1, 2, 3, 4, 5 };
 //		int[] nums = { 8, 1, 2, 2, 3 };
 //		int[] nums = { 6, 5, 4, 8 };
 //		int[] nums = { 7, 7, 7, 7 };
-		int[] nums = { 5, 0, 10, 0, 10, 6 };
+//		int[] nums = { 5, 0, 10, 0, 10, 6 };
 
 		SmallerNumber smallerNumber = new SmallerNumber();
 		int[] counts = smallerNumber.smallerNumbersThanCurrent(nums);
@@ -65,7 +66,8 @@ public class SmallerNumber {
 			hashTable[i] = hashTable[i] + hashTable[i - 1];
 		}
 		for (int i = 0; i < nums.length; i++) {
-			nums[i] = nums[i] == 0 ? 0 : hashTable[nums[i] - 1];
+			int num = nums[i];
+			nums[i] = num == 0 ? 0 : hashTable[num - 1];
 		}
 		return nums;
 	}

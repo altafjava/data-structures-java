@@ -18,8 +18,8 @@ public class Permutation {
 		perm(chars, 0);
 	}
 
-	boolean[] flag = new boolean[10];
-	char[] result = new char[10];
+	boolean[] flag = new boolean[3];
+	char[] result = new char[6];
 
 	public void perm(char[] chars, int k) {
 		if (k == chars.length) {

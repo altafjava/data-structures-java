@@ -4,7 +4,8 @@ package com.altafjava.array;
 1. Find the index of the NUMBER where it will be inserted
 2. Shift the elements to right side which are greater than the NUMBER
 3. Insert the element NUMBER in the required position
-This is approach will require to loops. First it has to find the index of NUMBER and second it will the greater elements. Hence use Approach2
+This is approach will require 2 loops. First it has to find the index of NUMBER and second it will the greater elements.
+Hence use Approach2
 
 Approach2:
 1. Directly start shifting elements to right which are greater than NUMBER

@@ -3,10 +3,11 @@ package com.altafjava.tree;
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Queue;
+import com.altafjava.leetcode.util.TreeNode;
 
 public class Tree {
 
-	private static Node root;
+	private static TreeNode root;
 
 	public static void main(String[] args) {
 		Tree tree = new Tree();
@@ -31,30 +32,30 @@ public class Tree {
 		tree.levelOrderTraversal();
 	}
 
-	public int height(Node node) {
+	public int height(TreeNode node) {
 		return 0;
 	}
 
 	public void add(int num) {
 		if (root == null) {
-			root = new Node(num);
+			root = new TreeNode(num);
 		} else {
 			insert(root, num);
 		}
 	}
 
-	public void insert(Node node, int num) {
-		if (num < node.data) {
+	public void insert(TreeNode node, int num) {
+		if (num < node.val) {
 			if (node.left != null) {
 				insert(node.left, num);
 			} else {
-				node.left = new Node(num);
+				node.left = new TreeNode(num);
 			}
 		} else {
 			if (node.right != null) {
 				insert(node.right, num);
 			} else {
-				node.right = new Node(num);
+				node.right = new TreeNode(num);
 			}
 		}
 	}
@@ -68,36 +69,36 @@ public class Tree {
 	}
 
 	public void levelOrderTraversal() {
-		Queue<Node> queue = new ArrayDeque<>();
+		Queue<TreeNode> queue = new ArrayDeque<>();
 		System.out.print("[");
 		if (root != null) {
-			System.out.print(root.data + " ");
+			System.out.print(root.val + " ");
 			queue.offer(root);
 		}
-		Node cn = null;
+		TreeNode cn = null;
 		while (!queue.isEmpty()) {
 			cn = queue.poll();
 			if (cn.left != null) {
-				System.out.print(cn.left.data + " ");
+				System.out.print(cn.left.val + " ");
 				queue.offer(cn.left);
 			}
 			if (cn.right != null) {
-				System.out.print(cn.right.data + " ");
+				System.out.print(cn.right.val + " ");
 				queue.offer(cn.right);
 			}
 		}
 		System.out.println("]");
 	}
 
-	public void iteratePreorder(Node node) {
+	public void iteratePreorder(TreeNode node) {
 		System.out.print("{");
-		Deque<Node> stack = new ArrayDeque<>();
+		Deque<TreeNode> stack = new ArrayDeque<>();
 		while (!stack.isEmpty() || node != null) {
 			if (node == null) {
 				node = stack.pop();
 				node = node.right;
 			} else {
-				System.out.print(node.data + " ");
+				System.out.print(node.val + " ");
 				stack.push(node);
 				node = node.left;
 			}
@@ -105,13 +106,13 @@ public class Tree {
 		System.out.println("}");
 	}
 
-	public void iterateInorder(Node node) {
+	public void iterateInorder(TreeNode node) {
 		System.out.print("{");
-		Deque<Node> stack = new ArrayDeque<>();
+		Deque<TreeNode> stack = new ArrayDeque<>();
 		while (!stack.isEmpty() || node != null) {
 			if (node == null) {
 				node = stack.pop();
-				System.out.print(node.data + " ");
+				System.out.print(node.val + " ");
 				node = node.right;
 			} else {
 				stack.push(node);
@@ -121,22 +122,22 @@ public class Tree {
 		System.out.println("}");
 	}
 
-	public void iteratePostorder(Node node) {
+	public void iteratePostorder(TreeNode node) {
 		System.out.print("{");
-		Deque<Node> stack = new ArrayDeque<>();
+		Deque<TreeNode> stack = new ArrayDeque<>();
 		while (!stack.isEmpty() || node != null) {
 			if (node != null) {
 				stack.push(node);
 				node = node.left;
 			} else {
 				node = stack.pop();
-				if (node.data > 0) {
-					node.data = -node.data;
+				if (node.val > 0) {
+					node.val = -node.val;
 					stack.push(node);
 					node = node.right;
 				} else {
-					node.data = -node.data;
-					System.out.print(node.data + " ");
+					node.val = -node.val;
+					System.out.print(node.val + " ");
 					node = null;
 				}
 			}
@@ -144,43 +145,28 @@ public class Tree {
 		System.out.println("}");
 	}
 
-	public void preorder(Node node) {
+	public void preorder(TreeNode node) {
 		if (node != null) {
-			System.out.print(node.data + " ");
+			System.out.print(node.val + " ");
 			preorder(node.left);
 			preorder(node.right);
 		}
 	}
 
-	public void inorder(Node node) {
+	public void inorder(TreeNode node) {
 		if (node != null) {
 			inorder(node.left);
-			System.out.print(node.data + " ");
+			System.out.print(node.val + " ");
 			inorder(node.right);
 		}
 	}
 
-	public void postorder(Node node) {
+	public void postorder(TreeNode node) {
 		if (node != null) {
 			postorder(node.left);
 			postorder(node.right);
-			System.out.print(node.data + " ");
+			System.out.print(node.val + " ");
 		}
 	}
 
-	public class Node {
-		int data;
-		Node left;
-		Node right;
-
-		public Node(int data) {
-			this.data = data;
-		}
-
-		public Node(int data, Node left, Node right) {
-			this.data = data;
-			this.left = left;
-			this.right = right;
-		}
-	}
 }
