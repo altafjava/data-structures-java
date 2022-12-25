@@ -26,12 +26,13 @@ public class ComplementNumber {
 
 	private static int findBitwiseComplement(int num) {
 		int n = num;
-		int bitCount = 0;
+		int powerOf2 = 1;
 		while (n > 0) {
-			bitCount++;
 			n = n >> 1;
+			powerOf2 = powerOf2 * 2;
 		}
-		int allOneBits = (int) Math.pow(2, bitCount) - 1;
+		int allOneBits = powerOf2 - 1;
+		System.out.println("mul=" + powerOf2);
 		return num ^ allOneBits;
 	}
 
