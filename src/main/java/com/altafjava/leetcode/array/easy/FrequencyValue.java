@@ -1,4 +1,4 @@
-package com.altafjava.leetcode.array;
+package com.altafjava.leetcode.array.easy;
 
 /*
 We are given a list nums of integers representing a list compressed with run-length encoding.

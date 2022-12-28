@@ -1,4 +1,4 @@
-package com.altafjava.leetcode.array;
+package com.altafjava.leetcode.array.easy;
 
 /*
 There is a hidden integer array arr that consists of n non-negative integers. It was encoded into another integer array encoded of

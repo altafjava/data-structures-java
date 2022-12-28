@@ -1,4 +1,4 @@
-package com.altafjava.leetcode.array;
+package com.altafjava.leetcode.array.easy;
 
 /*
 Given the array nums, for each nums[i] find out how many numbers in the array are smaller than it. That is, for each nums[i] you have to

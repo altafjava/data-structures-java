@@ -1,4 +1,4 @@
-package com.altafjava.leetcode.array;
+package com.altafjava.leetcode.array.easy;
 
 /*
 Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]).

@@ -1,4 +1,4 @@
-package com.altafjava.leetcode.array;
+package com.altafjava.leetcode.array.easy;
 
 /*
 Given an array of positive integers arr, return the sum of all possible odd-length subarrays of arr.

@@ -1,4 +1,4 @@
-package com.altafjava.leetcode.array;
+package com.altafjava.leetcode.array.easy;
 
 /*
 Given two string arrays word1 and word2, return true if the two arrays represent the same string, and false otherwise.

@@ -5,12 +5,11 @@ import java.util.Arrays;
 public class QuickSort {
 
 	public static void main(String[] args) {
-//		int[] arr = { 8, 7, 2, 1, 0, 9, 6 };
-		int[] arr = { 5, 7, 6, 9, 4, 8, 1, 2, 3 };
-		System.out.print("-: Quick Sort :-\nBefore Sort: ");
-		System.out.println(Arrays.toString(arr));
+		int[] arr = { 8, 7, 2, 1, 0, 9, 6 };
+//		int[] arr = { 5, 7, 6, 9, 4, 8, 1, 2, 3 };
+		System.out.print("-: Quick Sort :-\nBefore Sort: " + Arrays.toString(arr));
 		quickSort(arr, 0, arr.length - 1);
-//		System.out.print("\nAfter Sort: " + Arrays.toString(arr));
+		System.out.print("\nAfter Sort: " + Arrays.toString(arr));
 	}
 
 	private static void quickSort(int[] arr, int low, int high) {
@@ -32,10 +31,8 @@ public class QuickSort {
 			}
 			if (i < j)
 				swap(arr, i, j);
-//			System.out.println(Arrays.toString(arr));
 		} while (i < j);
 		swap(arr, low, j);
-		System.out.println(Arrays.toString(arr));
 		return j;
 	}
 
