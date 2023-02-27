@@ -1,5 +1,6 @@
 package com.altafjava.leetcode.array.easy;
 
+import java.util.Arrays;
 import java.util.List;
 
 /*
@@ -32,15 +33,15 @@ Constraints:
 public class CountMatchingRule {
 
 	public static void main(String[] args) {
-//		List<String> list1 = List.of("phone", "blue", "pixel");
-//		List<String> list2 = List.of("computer", "silver", "lenovo");
-//		List<String> list3 = List.of("phone", "gold", "iphone");
-//		List<List<String>> items = List.of(list1, list2, list3);
+//		List<String> list1 = Arrays.asList("phone", "blue", "pixel");
+//		List<String> list2 = Arrays.asList("computer", "silver", "lenovo");
+//		List<String> list3 = Arrays.asList("phone", "gold", "iphone");
+//		List<List<String>> items = Arrays.asList(list1, list2, list3);
 //		String ruleKey = "color", ruleValue = "silver";
-		List<String> list1 = List.of("phone", "blue", "pixel");
-		List<String> list2 = List.of("computer", "silver", "phone");
-		List<String> list3 = List.of("phone", "gold", "iphone");
-		List<List<String>> items = List.of(list1, list2, list3);
+		List<String> list1 = Arrays.asList("phone", "blue", "pixel");
+		List<String> list2 = Arrays.asList("computer", "silver", "phone");
+		List<String> list3 = Arrays.asList("phone", "gold", "iphone");
+		List<List<String>> items = Arrays.asList(list1, list2, list3);
 		String ruleKey = "type", ruleValue = "phone";
 		CountMatchingRule countMatchingRule = new CountMatchingRule();
 		int countMatches = countMatchingRule.countMatches(items, ruleKey, ruleValue);

@@ -1,10 +1,11 @@
 package com.altafjava.patterns.kwaymerge;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 
 /**
- * Given ‘M’ sorted arrays, find the median number among all arrays.
+ * Given ï¿½Mï¿½ sorted arrays, find the median number among all arrays.
  */
 public class Median {
 
@@ -12,7 +13,7 @@ public class Median {
 		Integer[] l1 = { 2, 6, 8, 11 };
 		Integer[] l2 = { 3, 5, 7, 9, 12 };
 		Integer[] l3 = { 1, 3, 4 };
-		double median = findMedian(List.of(l1, l2, l3));
+		double median = findMedian(Arrays.asList(l1, l2, l3));
 		System.out.println(median);
 	}
 

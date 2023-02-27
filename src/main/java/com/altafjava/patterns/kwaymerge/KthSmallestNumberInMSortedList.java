@@ -1,5 +1,6 @@
 package com.altafjava.patterns.kwaymerge;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -21,7 +22,7 @@ public class KthSmallestNumberInMSortedList {
 //		int result = findKthSmallestNumber(lists, 5);
 		Integer[] l1 = { 5, 8, 9 };
 		Integer[] l2 = { 1, 7 };
-		List<Integer[]> lists = List.of(l1, l2);
+		List<Integer[]> lists = Arrays.asList(l1, l2);
 		int result = findKthSmallestNumber(lists, 3);
 		System.out.println("Kth smallest number: " + result);
 

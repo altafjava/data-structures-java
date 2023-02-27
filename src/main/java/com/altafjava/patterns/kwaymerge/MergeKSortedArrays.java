@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 /**
- * Given a list of ‘K’ sorted arrays, merge them into one sorted list.
+ * Given a list of ï¿½Kï¿½ sorted arrays, merge them into one sorted list.
  * 
  */
 public class MergeKSortedArrays {
@@ -14,7 +14,7 @@ public class MergeKSortedArrays {
 		Integer[] l1 = { 2, 6, 8, 11 };
 		Integer[] l2 = { 3, 5, 7, 9, 12 };
 		Integer[] l3 = { 1, 3, 4 };
-		Integer[] result = mergeSortedArrays(List.of(l1, l2, l3));
+		Integer[] result = mergeSortedArrays(Arrays.asList(l1, l2, l3));
 		System.out.println(Arrays.toString(result));
 	}
 

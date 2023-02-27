@@ -1,6 +1,7 @@
 package com.altafjava.tree;
 
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Deque;
 import java.util.List;
 import com.altafjava.leetcode.util.TreeNode;
@@ -10,7 +11,7 @@ public class Test {
 	static TreeNode head = null;
 
 	public static void main(String[] args) {
-		List<Integer> integers = List.of(10, 5, 15, 2, 18, 12, 8);
+		List<Integer> integers = Arrays.asList(10, 5, 15, 2, 18, 12, 8);
 		for (int i : integers) {
 			insert(head, i);
 		}

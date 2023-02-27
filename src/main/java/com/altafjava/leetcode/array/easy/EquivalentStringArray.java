@@ -67,6 +67,6 @@ public class EquivalentStringArray {
 		for (String word : word2) {
 			sb2.append(word);
 		}
-		return sb1.compareTo(sb2) == 0 ? true : false;
+		return sb1.toString().equals(sb2.toString());
 	}
 }

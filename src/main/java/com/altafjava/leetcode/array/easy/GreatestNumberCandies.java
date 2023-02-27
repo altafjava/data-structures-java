@@ -3,6 +3,7 @@ package com.altafjava.leetcode.array.easy;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /*
 There are n kids with candies. You are given an integer array candies, where each candies[i] represents the number of candies
@@ -67,6 +68,6 @@ public class GreatestNumberCandies {
 
 	public List<Boolean> kidsWithCandies2(int[] candies, int extraCandies) {
 		int max = Arrays.stream(candies).max().getAsInt();
-		return Arrays.stream(candies).mapToObj(candy -> candy + extraCandies >= max).toList();
+		return Arrays.stream(candies).mapToObj(candy -> candy + extraCandies >= max).collect(Collectors.toList());
 	}
 }
