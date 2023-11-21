@@ -43,6 +43,14 @@ public class ListNodeUtil {
 		return linkedList.getListNode();
 	}
 
+	public static ListNode createListNodeInReverseOrder(int... arr) {
+		LinkedList linkedList = new LinkedList();
+		for (int i = arr.length - 1; i >= 0; i--) {
+			linkedList.add(arr[i]);
+		}
+		return linkedList.getListNode();
+	}
+
 	public static int getNoFromListNode(ListNode listNode) {
 		ListNode cn = listNode;
 		StringBuilder sb = new StringBuilder();
