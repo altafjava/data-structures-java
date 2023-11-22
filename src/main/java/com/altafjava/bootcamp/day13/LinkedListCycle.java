@@ -1,7 +1,6 @@
 package com.altafjava.bootcamp.day13;
 
 import com.altafjava.leetcode.util.ListNode;
-import com.altafjava.leetcode.util.ListNodeUtil;
 
 /*
 141. Linked List Cycle
@@ -55,7 +54,7 @@ public class LinkedListCycle {
 		System.out.println(hasCycle);
 	}
 
-	static public boolean hasCycle(ListNode head) {
+	public static boolean hasCycle(ListNode head) {
 		ListNode slow = head, fast = head;
 		while (fast != null && fast.next != null) {
 			slow = slow.next;
