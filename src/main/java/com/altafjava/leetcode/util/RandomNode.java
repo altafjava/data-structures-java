@@ -11,7 +11,7 @@ public class RandomNode {
 
 	@Override
 	public String toString() {
-		return val + "(" + this.hashCode() + ")" + "->" + next;
+		return val + " " + next;
 	}
 
 }
