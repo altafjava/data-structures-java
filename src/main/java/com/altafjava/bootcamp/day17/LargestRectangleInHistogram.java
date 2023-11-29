@@ -1,4 +1,4 @@
-package com.altafjava.bootcamp.day16;
+package com.altafjava.bootcamp.day17;
 
 import java.util.ArrayDeque;
 
@@ -28,9 +28,6 @@ public class LargestRectangleInHistogram {
 	public static void main(String[] args) {
 //		int[] heights = { 2, 1, 5, 6, 2, 3 };
 //		int[] heights = { 2, 4 };
-//		int[] heights = {7526,2268,7746,6830,6480,3846,9924,9681,2569,884,8244,1815,9000,6580,3955,3176,950,6427,8420,8194,359,2097,3085,1330,132,6469};
-//		int[] heights = {7526,2268,7746,6830,6480,3846,9924,9681,2569,884,8244};
-//		int[] heights = {75,22,77,68,64};
 		int[] heights = { 6, 2, 7, 5, 4 };
 		int largestRectangleArea = largestRectangleArea2(heights);
 		System.out.println(largestRectangleArea);
