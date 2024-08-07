@@ -30,6 +30,7 @@ public class Tree {
 		tree.iterateInorder(root);
 		tree.iteratePostorder(root);
 		tree.levelOrderTraversal();
+		tree.delete(root, 5);
 	}
 
 	public int height(TreeNode node) {
@@ -59,7 +60,36 @@ public class Tree {
 			}
 		}
 	}
+	
+	public TreeNode delete(TreeNode node, int num) {
+		if (node == null) {
+			return null;
+		}
+		if (num < node.val) {
+			node.left = delete(node.left, num);
+		} else if (num > node.val) {
+			node.right = delete(node.right, num);
+		} else {
+			if (node.left == null) {
+				return node.right;
+			} else if (node.right == null) {
+				return node.left;
+			}
+			node.val = minValue(node.right);
+			node.right = delete(node.right, node.val);
+		}
+		return node;
+	}
 
+	private int minValue(TreeNode node) {
+		int min = node.val;
+		while (node.left != null) {
+			min = node.left.val;
+			node = node.left;
+		}
+		return min;
+	}
+	
 	public void print() {
 		System.out.print("[");
 		preorder(root);
