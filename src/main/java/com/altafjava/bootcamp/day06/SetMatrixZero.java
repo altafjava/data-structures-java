@@ -3,7 +3,10 @@ package com.altafjava.bootcamp.day06;
 import java.util.Arrays;
 
 /*
-Given an m x n integer matrix matrix, if an element is 0, set its entire row and column to 0's.
+73. Set Matrix Zeroes
+https://leetcode.com/problems/set-matrix-zeroes/description/
+
+Given an m x n integer matrix, if an element is 0, set its entire row and column to 0's.
 You must do it in place.
 
 Example 1:
@@ -24,8 +27,7 @@ Follow up:
     A straightforward solution using O(mn) space is probably a bad idea.
     A simple improvement uses O(m + n) space, but still not the best solution.
     Could you devise a constant space solution?
-
- */
+*/
 public class SetMatrixZero {
 
 	public static void main(String[] args) {

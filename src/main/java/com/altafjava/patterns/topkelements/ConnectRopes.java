@@ -23,7 +23,7 @@ public class ConnectRopes {
 	 * <b>Time Complexity:</b> Given ‘N’ ropes, we need O(N*logN) to insert all the ropes in the heap. In each step, while
 	 * processing the heap, we take out two elements from the heap and insert one. This means we will have a total of ‘N’
 	 * steps, having a total time complexity of O(N*logN).</br>
-	 * <b>Space Complexity</b>The space complexity will be O(N)O(N) because we need to store all the ropes in the heap.
+	 * <b>Space Complexity</b>The space complexity will be O(N) because we need to store all the ropes in the heap.
 	 * 
 	 * @param ropeLengths
 	 * @return
@@ -43,11 +43,11 @@ public class ConnectRopes {
 	}
 
 	public static void main(String[] args) {
-		int result = minimumCostToConnectRopes(new int[] { 1, 3, 11, 5 });
-		System.out.println("Minimum cost to connect ropes: " + result);
-		result = minimumCostToConnectRopes(new int[] { 3, 4, 5, 6 });
-		System.out.println("Minimum cost to connect ropes: " + result);
-		result = minimumCostToConnectRopes(new int[] { 1, 3, 11, 5, 2 });
+//		int result = minimumCostToConnectRopes(new int[] { 1, 3, 11, 5 });
+//		System.out.println("Minimum cost to connect ropes: " + result);
+//		result = minimumCostToConnectRopes(new int[] { 3, 4, 5, 6 });
+//		System.out.println("Minimum cost to connect ropes: " + result);
+		int result = minimumCostToConnectRopes(new int[] { 1, 3, 11, 5, 2 });
 		System.out.println("Minimum cost to connect ropes: " + result);
 	}
 }

@@ -4,10 +4,10 @@ import com.altafjava.leetcode.util.ListNode;
 import com.altafjava.leetcode.util.ListNodeUtil;
 
 /*
-Given the head of a LinkedList and two positions ‘p’ and ‘q’, reverse the LinkedList from position ‘p’ to ‘q’.
+Given the head of a LinkedList and two positions ï¿½pï¿½ and ï¿½qï¿½, reverse the LinkedList from position ï¿½pï¿½ to ï¿½qï¿½.
  Input: 1 2 3 4 5, p=2, q=4
  
- Output: 
+ Output: 1 4 3 2 5 
  
  */
 public class ReverseSubList {

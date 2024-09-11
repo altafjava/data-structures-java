@@ -1,4 +1,4 @@
-package com.altafjava.bootcamp.day12;
+package com.altafjava.patterns.linkedlist;
 
 import com.altafjava.leetcode.util.ListNode;
 import com.altafjava.leetcode.util.ListNodeUtil;
@@ -37,41 +37,26 @@ public class ReverseLinkedList {
 	}
 
 	static public ListNode reverseList(ListNode head) {
-		return reverse(head, null);
+		ListNode reverseNode = null;
+		while (head != null) {
+			ListNode next = head.next;
+			head.next = reverseNode;
+			reverseNode = head;
+			head = next;
+		}
+		return reverseNode;
 	}
-
-	static private ListNode reverse(ListNode head, ListNode reverseHead) {
-		if (head == null)
-			return reverseHead;
-		ListNode next = head.next;
-		head.next = reverseHead;
-		return reverse(next, head);
-	}
-
+	
 //	static public ListNode reverseList(ListNode head) {
-//		ListNode reverseNode = null;
-//		while (head != null) {
-//			ListNode next = head.next;
-//			head.next = reverseNode;
-//			reverseNode = head;
-//			head = next;
-//		}
-//		return reverseNode;
+//		return reverse(head, null);
 //	}
 
-//	static public ListNode reverseList(ListNode head) {
-//		ListNode reverseNode = null;
-//		while (head != null) {
-//			if (reverseNode == null) {
-//				reverseNode = new ListNode(head.val);
-//			} else {
-//				ListNode listNode = new ListNode(head.val);
-//				listNode.next = reverseNode;
-//				reverseNode = listNode;
-//			}
-//			head = head.next;
-//		}
-//		return reverseNode;
+//	static private ListNode reverse(ListNode head, ListNode reverseHead) {
+//		if (head == null)
+//			return reverseHead;
+//		ListNode next = head.next;
+//		head.next = reverseHead;
+//		return reverse(next, head);
 //	}
 
 }

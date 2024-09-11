@@ -1,7 +1,10 @@
 package com.altafjava.bootcamp.day06;
 
 /*
- You are given an m x n integer matrix matrix with the following two properties:
+74. Search a 2D Matrix
+https://leetcode.com/problems/search-a-2d-matrix/description/
+
+You are given an m x n integer matrix with the following two properties:
     Each row is sorted in non-decreasing order.
     The first integer of each row is greater than the last integer of the previous row.
 Given an integer target, return true if target is in matrix or false otherwise.
@@ -18,7 +21,7 @@ Output: false
 
 Time Complexity: O(log(m * n))
 Space Complexity: O(1)
- */
+*/
 public class Search2dMatrix {
 
 	public static void main(String[] args) {

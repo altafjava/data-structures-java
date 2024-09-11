@@ -45,9 +45,9 @@ Space Complexity: O(1)
 public class NextPermutation {
 
 	public static void main(String[] args) {
-//		int[] nums1 = { 1, 2, 3 };
-//		nextPermutation(nums1);
-//		System.out.println(Arrays.toString(nums1)); // Output: [1, 3, 2]
+		int[] nums1 = { 1, 2, 3 };
+		nextPermutation(nums1);
+		System.out.println(Arrays.toString(nums1)); // Output: [1, 3, 2]
 //
 //		int[] nums2 = { 3, 2, 1 };
 //		nextPermutation(nums2);
@@ -61,15 +61,15 @@ public class NextPermutation {
 //		nextPermutation(nums3);
 //		System.out.println(Arrays.toString(nums3)); // Output: [0, 1, 3, 2, 4, 8, 9]
 
-		int[] nums3 = { 9, 8, 4, 3 };
-		nextPermutation(nums3);
-		System.out.println(Arrays.toString(nums3)); // Output: [3, 4, 8, 9]
+//		int[] nums3 = { 9, 8, 4, 3 };
+//		nextPermutation(nums3);
+//		System.out.println(Arrays.toString(nums3)); // Output: [3, 4, 8, 9]
 	}
 
 	public static void nextPermutation(int[] nums) {
 		int n = nums.length;
 		// Find the first element from the right that is smaller than its next element
-		int i = n - 1;
+		int i = n - 2;
 		while (i >= 0 && nums[i] >= nums[i + 1]) {
 			i--;
 		}

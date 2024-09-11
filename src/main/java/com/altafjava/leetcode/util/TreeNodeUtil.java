@@ -7,9 +7,12 @@ public class TreeNodeUtil {
 //		Integer[] tree = { 8, null, 6, null, 5, null, 4, null, 3, null, 2, null, 1 };
 		TreeNode head = new TreeNode(tree[0]);
 		createTree(head, 0, tree);
+		print(head);
 	}
 
 	public static TreeNode createTreeNodeFromArray(Integer[] arr) {
+		if (arr.length == 0)
+			return null;
 		TreeNode head = new TreeNode(arr[0]);
 		createTree(head, 0, arr);
 		return head;

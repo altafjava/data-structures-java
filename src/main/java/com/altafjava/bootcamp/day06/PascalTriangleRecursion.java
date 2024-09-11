@@ -5,6 +5,7 @@ import java.util.List;
 
 /*
 Given an integer numRows, return the first numRows of Pascal's triangle.
+118. https://leetcode.com/problems/pascals-triangle/description/
 
 Example 1:
 Input: numRows = 5
@@ -17,7 +18,7 @@ Output: [[1]]
 Constraints:
     1 <= numRows <= 30
 
-Time COmplexity: O(numRows^2) = O(n^2)
+Time Complexity: O(numRows^2) = O(n^2)
 Space complexity: O(numRows^2) = O(n^2)
 */
 public class PascalTriangleRecursion {

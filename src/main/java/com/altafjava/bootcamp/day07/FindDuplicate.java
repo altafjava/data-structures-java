@@ -1,6 +1,9 @@
 package com.altafjava.bootcamp.day07;
 
 /*
+287. Find the Duplicate Number
+https://leetcode.com/problems/find-the-duplicate-number/description/
+
 Given an array of integers nums containing n + 1 integers where each integer is in the range [1, n] inclusive.
 There is only one repeated number in nums, return this repeated number.
 You must solve the problem without modifying the array nums and uses only constant extra space.
@@ -23,12 +26,12 @@ Follow up:
     How can we prove that at least one duplicate number must exist in nums?
     Can you solve the problem in linear runtime complexity?
  */
-public class FindDulpicate {
+public class FindDuplicate {
 
 	public static void main(String[] args) {
-//		int nums[] = { 1, 3, 4, 2, 2 };
+		int nums[] = { 1, 3, 4, 2, 2 };
 //		int nums[] = { 3, 1, 3, 4, 2 };
-		int nums[] = { 2, 5, 9, 6, 9, 3, 8, 9, 7, 1 };
+//		int nums[] = { 2, 5, 9, 6, 9, 3, 8, 9, 7, 1 };
 		int mark = findDuplicate(nums);
 		System.out.println(mark);
 	}

@@ -15,15 +15,16 @@ import com.altafjava.leetcode.util.ListNodeUtil;
 public class MergeKSortedLists {
 
 	public static void main(String[] args) {
-//		ListNode l1 = ListNodeUtil.createListNode(268);
-//		ListNode l2 = ListNodeUtil.createListNode(367);
-//		ListNode l3 = ListNodeUtil.createListNode(134);
-//		ListNode result = merge(new ListNode[] { l1, l2, l3 });
-//		ListNodeUtil.print(result);
-		ListNode l1 = ListNodeUtil.createListNode(589);
-		ListNode l2 = ListNodeUtil.createListNode(17);
-		ListNode result = merge(new ListNode[] { l1, l2 });
+		ListNode l1 = ListNodeUtil.createListNode(268);
+		ListNode l2 = ListNodeUtil.createListNode(367);
+		ListNode l3 = ListNodeUtil.createListNode(134);
+		ListNode result = merge(new ListNode[] { l1, l2, l3 });
 		ListNodeUtil.print(result);
+		
+//		ListNode l1 = ListNodeUtil.createListNode(589);
+//		ListNode l2 = ListNodeUtil.createListNode(17);
+//		ListNode result = merge(new ListNode[] { l1, l2 });
+//		ListNodeUtil.print(result);
 
 	}
 

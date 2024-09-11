@@ -32,10 +32,10 @@ Space Complexity: O(n)
 public class MergeIntervals {
 
 	public static void main(String[] args) {
-//		int[][] intervals = { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
+		int[][] intervals = { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
 //		int[][] intervals = { { 1, 4 }, { 4, 5 } };
 //		int[][] intervals = {{1, 3}};
-		int[][] intervals = { { 1, 3 }, { 5, 7 }, { 9, 11 } };
+//		int[][] intervals = { { 1, 3 }, { 5, 7 }, { 9, 11 } };
 		int[][] result = merge(intervals);
 		System.out.println(Arrays.deepToString(result));
 	}

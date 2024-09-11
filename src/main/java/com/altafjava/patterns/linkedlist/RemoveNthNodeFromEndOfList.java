@@ -1,4 +1,4 @@
-package com.altafjava.bootcamp.day12;
+package com.altafjava.patterns.linkedlist;
 
 import com.altafjava.leetcode.util.ListNode;
 import com.altafjava.leetcode.util.ListNodeUtil;

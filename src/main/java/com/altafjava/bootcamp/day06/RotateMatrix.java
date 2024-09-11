@@ -3,6 +3,9 @@ package com.altafjava.bootcamp.day06;
 import java.util.Arrays;
 
 /*
+48. Rotate Image
+https://leetcode.com/problems/rotate-image/description/
+
 You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
 You have to rotate the image in-place, which means you have to modify the input 2D matrix directly.
 DO NOT allocate another 2D matrix and do the rotation.
@@ -19,6 +22,9 @@ Constraints:
     n == matrix.length == matrix[i].length
     1 <= n <= 20
     -1000 <= matrix[i][j] <= 1000
+
+Time Complexity: O(n^2)
+Space Complexity: O(1)
 */
 public class RotateMatrix {
 
@@ -40,7 +46,7 @@ public class RotateMatrix {
 				matrix[j][i] = temp;
 			}
 		}
-		// Reverse each row
+		// Swap each row 1st and last no
 		for (int i = 0; i < n; i++) {
 			int left = 0, right = n - 1;
 			while (left < right) {

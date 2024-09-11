@@ -3,6 +3,25 @@ package com.altafjava.bootcamp.day06;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+118. Given an integer numRows, return the first numRows of Pascal's triangle.
+https://leetcode.com/problems/pascals-triangle/description/
+
+Example 1:
+Input: numRows = 5
+Output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]
+
+Example 2:
+Input: numRows = 1
+Output: [[1]]
+
+Constraints:
+    1 <= numRows <= 30
+
+Time Complexity: O(numRows^2) = O(n^2)
+Space complexity: O(numRows^2) = O(n^2)
+*/
+
 public class PascalTriangle {
 
 	public static void main(String[] args) {
