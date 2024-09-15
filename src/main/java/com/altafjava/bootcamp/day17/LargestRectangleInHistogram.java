@@ -26,9 +26,9 @@ Constraints:
 public class LargestRectangleInHistogram {
 
 	public static void main(String[] args) {
-//		int[] heights = { 2, 1, 5, 6, 2, 3 };
+		int[] heights = { 2, 1, 5, 6, 2, 3 };
 //		int[] heights = { 2, 4 };
-		int[] heights = { 6, 2, 7, 5, 4 };
+//		int[] heights = { 6, 2, 7, 5, 4 };
 		int largestRectangleArea = largestRectangleArea2(heights);
 		System.out.println(largestRectangleArea);
 	}
