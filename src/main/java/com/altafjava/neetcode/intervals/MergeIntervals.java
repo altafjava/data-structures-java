@@ -1,4 +1,4 @@
-package com.altafjava.bootcamp.day08;
+package com.altafjava.neetcode.intervals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
